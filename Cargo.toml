@@ -1,6 +1,6 @@
 [package]
 name = "mac-time-server"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 description = "RFC 868 UDP time server"
 repository = "https://github.com/plicease/mac-time-server"
