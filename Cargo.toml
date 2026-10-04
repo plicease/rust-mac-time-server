@@ -1,0 +1,25 @@
+[package]
+name = "mac-time-server"
+version = "0.1.0"
+edition = "2024"
+description = "RFC 868 UDP time server"
+repository = "https://github.com/plicease/mac-time-server"
+license = "MIT"
+
+[dependencies]
+anyhow = "1.0.104"
+
+
+[package.metadata.deb]
+maintainer = "Nobody <devnull@wdlabs.com>"
+copyright = "Nobody"
+extended-description = """\
+RFC 868 UDP time server"""
+section = "utils"
+priority = "optional"
+assets = [
+    ["target/release/mac-time-server", "usr/bin/", "755"],
+    ["README.md", "usr/share/doc/mac-time-server/README.md", "644"],
+    ["LICENSE", "usr/share/doc/mac-time-server/LICENSE", "644"],
+]
+
